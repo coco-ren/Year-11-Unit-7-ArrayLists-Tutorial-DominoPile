@@ -151,11 +151,11 @@ public class DominoTester {
     }
 
     @Test
-    public void testCompareToReturns0() {
+    public void testCompareToWeightReturns0() {
         setUp();
         domino.setTop(4);
         domino.setBottom(4);
-        assertEquals("Ensure that your compareTo method in the Domino class has been implemented correctly!", 0, domino.compareTo(otherDomino));
+        assertEquals("Ensure that your compareTo method in the Domino class has been implemented correctly!", 0, domino.compareToWeight(otherDomino));
         tearDown();
     }
 
